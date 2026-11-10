@@ -9,12 +9,12 @@ En este documento, veremos como crearnos una cuenta, crear un repositorio, añad
 ### 1. Crear una cuenta de github
 Para crear una cuenta pinchámos en el siguiente botón de la página principal:
 
-![github1](./imagenes/2026-09-29_21-19.png)
+![github1](./img/img1/2026-09-29_21-19.png)
 
 a continuación rellenaremos el siguiente formulario:
 
-![github2](./imagenes/2026-09-29_21-19_1.png)
+![github2](./img/img1/2026-09-29_21-19_1.png)
 
 tras crear una cuenta aparecceremos en el siguiente menú:
 
-![github3](./imagenes/2026-09-29_21-27.png)
+![github3](./img/img1/2026-09-29_21-27.png)
