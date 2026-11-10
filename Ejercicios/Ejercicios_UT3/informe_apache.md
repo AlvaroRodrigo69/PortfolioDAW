@@ -56,13 +56,13 @@ Se instala el paquete `apache2` desde los repositorios de Ubuntu:
 sudo apt install apache2
 ```
 
-![Instalación de Apache con apt install apache2](./img/instalar_apache.png)
+![Instalación de Apache con apt install apache2](./img/img1/instalar_apache.png)
 
 El sistema resuelve las dependencias, muestra los paquetes que se instalarán y pide confirmación (`s`).
 
 ### 2.2 Creación de la página web (paso 3 del tutorial)
 
-![Primeros comandos](img/primeros_comandos.png)
+![Primeros comandos](img/img1/primeros_comandos.png)
 
 utilizamos ```cat /etc/hosts``` para comprobar los hosts que tenemos actualmente.  
 en los dos siguientes comandos creamos un nuevo directorio y metemos nuestro terminal en él, acto seguido crearemos un archivo index.html mediante sudo (ya que sin sudo no funciona).  
@@ -70,19 +70,19 @@ A continuación se accede a `sites-available` y se copia la configuración por d
 
 ### 2.3 Configuración y activación del sitio (pasos 4 y 5 del tutorial)
 
-![Últimos comandos](img/ultimos_comandos.png)
+![Últimos comandos](img/img1/ultimos_comandos.png)
 
 Se edita `gci.conf`, se activa el sitio con `a2ensite`, se recarga Apache y se abre `/etc/hosts` para asociar el dominio a la máquina local.
 
 En el archivo `gci.conf` se modifican dos directivas: `DocumentRoot /var/www/gci` (carpeta con el contenido del sitio) y `ServerName gci.example.com` (nombre de dominio del sitio).
 
-![Edición de gci.conf: DocumentRoot y ServerName](img/modificar_servername.png)
+![Edición de gci.conf: DocumentRoot y ServerName](img/img1/modificar_servername.png)
 
 ### 2.4 Comprobación del resultado
 
 Al acceder desde el navegador a `http://gci.example.com`, se muestra el contenido de `index.html`, lo que confirma que el sitio virtual funciona:
 
-![Sitio gci.example.com funcionando en el navegador](img/muestra_final_de_apache.png)
+![Sitio gci.example.com funcionando en el navegador](img/img1/muestra_final_de_apache.png)
 
 ### 2.5 Problemas surgidos
 
