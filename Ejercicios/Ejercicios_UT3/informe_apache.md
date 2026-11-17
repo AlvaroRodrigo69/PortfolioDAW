@@ -1,14 +1,5 @@
-# Memoria técnica: Instalación y configuración de un servidor web Apache en Ubuntu
-
-**Módulo:** Despliegue de Aplicaciones Web · 2º DAW
-**Fecha:** 3 de noviembre de 2026
-
+# Instalación y configuración de un servidor web Apache en Ubuntu
 ---
-
-## Resumen
-
-En este trabajo se documenta la instalación y la configuración básica del servidor web Apache sobre una máquina virtual con Ubuntu 24.04 en VirtualBox. Se instala el paquete `apache2`, se crea una página web sencilla y se configura un sitio virtual (*VirtualHost*) con su propio directorio raíz y nombre de dominio. Después se activa el sitio y se asocia el dominio a la máquina local mediante el archivo `/etc/hosts`. Por último, se comprueba desde el navegador que el sitio responde correctamente. El documento recoge el proceso paso a paso con capturas, los problemas encontrados, el banco de pruebas empleado, los resultados obtenidos y una valoración final.
-
 ## Índice
 
 1. [Introducción](#1-introducción)
@@ -64,8 +55,8 @@ El sistema resuelve las dependencias, muestra los paquetes que se instalarán y 
 
 ![Primeros comandos](img/img1/primeros_comandos.png)
 
-utilizamos ```cat /etc/hosts``` para comprobar los hosts que tenemos actualmente.  
-en los dos siguientes comandos creamos un nuevo directorio y metemos nuestro terminal en él, acto seguido crearemos un archivo index.html mediante sudo (ya que sin sudo no funciona).  
+Utilizamos `cat /etc/hosts` para comprobar los hosts que tenemos actualmente.  
+En los dos siguientes comandos creamos un nuevo directorio y metemos nuestro terminal en él; acto seguido crearemos un archivo index.html mediante sudo (ya que sin sudo no funciona).  
 A continuación se accede a `sites-available` y se copia la configuración por defecto de Apache a un archivo nuevo, `gci.conf`.
 
 ### 2.3 Configuración y activación del sitio (pasos 4 y 5 del tutorial)
@@ -86,7 +77,7 @@ Al acceder desde el navegador a `http://gci.example.com`, se muestra el contenid
 
 ### 2.5 Problemas surgidos
 
-> No se dio ningun problema relacionado con la actividad pero si es recomendable poner 8 de ram a la maquiina virtual para que no vaya lenta
+No se dio ningún problema relacionado con la actividad, pero sí es recomendable poner 8 GB de RAM a la máquina virtual para que no vaya lenta.
 
 ---
 
@@ -98,7 +89,7 @@ Se ha instalado correctamente Apache en Ubuntu y se ha configurado un sitio virt
 
 ### 3.2 Valoración personal
 
-> Gracias al tutorial proporcionado por el enlace en la bibliografia resulta una practica relativamente sencilla pero se deben de tener unos conocimientos minimos para poder realizarse, como el uso de bash, por lo demas resulta sencilla y rapida de realizar.
+Gracias al tutorial proporcionado por el enlace en la bibliografía resulta una práctica relativamente sencilla, pero se deben tener unos conocimientos mínimos para poder realizarla, como el uso de Bash; por lo demás resulta sencilla y rápida de realizar.
 
 ---
 

@@ -1,10 +1,5 @@
 # Iniciación a la Virtualización: Ubuntu y Docker
-
-**Módulo:** Despliegue de Aplicaciones Web · 2º DAW
-**Fecha:** 3 de noviembre de 2026
-
 ---
-
 ## Índice
 
 1. [Introducción](#1-introducción)
